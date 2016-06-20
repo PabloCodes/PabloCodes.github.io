@@ -4,6 +4,15 @@ body {
 }
 
 td img {
-	height: 100px;
-	width: 100px;
+	height: 300px;
+	width: 300px;
+}
+div {	
+	border-radius: 5px;
+	border: 2px solid #6495ED;
+	background-color: #BCD2EE;
+	height: 50px;
+	width: 120px;
+	margin: auto;
+	text-align: center;
 }
