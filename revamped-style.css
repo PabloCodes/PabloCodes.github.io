@@ -14,6 +14,9 @@ body {
 	font-family: sans-serif;
 	font-weight: lighter;
 }
+ul {
+	list-style: none;
+}
 .navbar ul {
 	list-style: none;
 	text-align: left;
@@ -23,6 +26,7 @@ body {
 .navbar ul li a{
 	text-decoration: none;
 	color:black;
+	font-size: 18px;
 }
 .navbar ul li a:hover {
 	text-decoration: underline;
@@ -44,11 +48,26 @@ body {
 .cut40 {
 	width: 60%;
 }
+.peep {
+	width: 100%;
+}
 .peep > .fill {
-	width: 70%;
+	width: 80%;
+	margin: 5px;
+}
+.title {
+	padding-top: 100px;
 }
 @media(max-width: 768px) {
 	.navbar {
 
 	}
+}
+.btn {
+	background: blue;
+	color: white;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 10px;
+	border-radius: 3px;
+	bottom: 50px;
 }
