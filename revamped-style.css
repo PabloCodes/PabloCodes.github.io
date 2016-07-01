@@ -1,18 +1,54 @@
+* {
+	font-weight: lighter;
+}
 body {
 	text-align: center;
+	font-family: sans-serif;
+	font-weight: lighter;
 }
-a {
+.pics h6{
+	font-family:sans-serif;
+	font-weight:lighter;
+}
+.kagaonse, .kanazawa, .tokyo, .fam, .homePage {
+	font-family: sans-serif;
+	font-weight: lighter;
+}
+.navbar ul {
+	list-style: none;
+	text-align: left;
+	position:fixed;
+	transform:translate(0, 90%);
+}
+.navbar ul li a{
 	text-decoration: none;
-	color: inherit;
+	color:black;
+}
+.navbar ul li a:hover {
+	text-decoration: underline;
+	color:black;
+}
+.navbar ul li a:active {
+	text-decoration: none;
+	color: gray;
 }
 .navbar {
 	position: fixed;
-	top: 400px;
+	transform:translate(50% 0%);
 	left: 20px;
+	border: solid black 2px;
 }
 .fill {
 	width: 90%;
 }
+.cut40 {
+	width: 60%;
+}
 .peep > .fill {
 	width: 70%;
+}
+@media(max-width: 768px) {
+	.navbar {
+
+	}
 }
