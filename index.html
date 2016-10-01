@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="revamped-style.css">
-	<title>new index</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<title>Pablo's Personal Site</title>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -17,51 +17,26 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
-<body>
-	<div class="container">
-		<div class="navbar">					
-			<ul>		
-				<li><a href="http://pablocodes.gituhub.io">home</a></li>
-				<li><a href="http://pablocodes.github.io/revamped-fam.html">about me</a></li>
-				<li><a href="http://pablocodes.github.io/revamped-kagaonsen.html">kagaonsen</a></li>
-				<li><a href="http://pablocodes.github.io/revamped-kanazawa.html">kanazawa</a></li>
-				<li><a href="http://pablocodes.github.io/revamped-tokyo.html">tokyo</a></li>
-			</ul>
-		</div>		
-			<div class="row">
-			<div class="col-sm-2"></div>
-			<div class="col-sm-10">
-				<div class="homePage">
-					<div class="overview">
-						<div class="row">
-							<div class="col-sm-2"></div>
-							<div class="col-sm-8">
-								<h4>Hello World! Japan Edition</h4>
-								<p>Earlier this summer I made my way to Japan for the second time. While there, my family and I had many adventures and explored three different cultures, and a sampling of several different subsections of Japanese Cuisine. Our trip was confined to three cities: Kagaonsen, Kanazawa and Tokyo.</p>
-							</div>
-							<div class="col-sm-2"></div>
-						</div>
-						<div class="pics">
-							<div class="row">
-					 			<div class="col-sm-4 col-xs-6">
-					 				<img class="fill" src="http://www.japan-guide.com/g7/4284_01.jpg">
-					 				<h6>Kagaonsen</h6>
-
-					 			</div>
-					 			<div class="col-sm-4 col-xs-6">
-					 				<img class="fill" src="http://travelneu.com/o/Kanazawa-o11.jpg">
-					 				<h6>Kanazawa</h6>
-					 			</div>
-					 			<div class="col-sm-4 col-xs-6">
-					 				<img class="fill" src="http://www.steveclark.us/wp-content/uploads/2014/03/tokyo-metro-skytree-skyline-fuji.png">
-					 				<h6>Tokyo</h6>
-					 			</div>
-					 		</div>
-						</div>
-					</div>
-				</div>	
-			</div>
-		</div>
+<body ng-app="personalApp">
+	<div class="header">Pablo Cazzulino</div>
+	<div class="navbar">
+		<ul>
+			<li>
+				<a ng-href="">Contact Me</a>
+			</li>
+			<li>
+				<a ng-href="">Resume</a>
+			</li>
+			<li>
+				<a ng-href="">About Me</a>
+			</li>
+		</ul>
 	</div>
+
+	<div class="container" ng-view></div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+	<script src="angular-route.js"></script>
+	
 </body>
 </html>
