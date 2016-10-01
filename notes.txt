@@ -1,0 +1,7 @@
+make font consistent
+
+home link takes you to yahoo
+
+in kanazawa: center has good resizing but nav bar is glitchy
+
+in about me: the text drops below all pics when resized
