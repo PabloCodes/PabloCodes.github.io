@@ -2,16 +2,17 @@ var app = angular.module('personalApp', ['ngRoute']);
 
 app.config(function($routeProvider) {
 	$routeProvider.when('/', {
-		controller: 'mainCtrl',
+		controller: 'MainCtrl',
 		templateUrl: 'templates/home.html'
 	}).when('/resume', {
-		controller: 'mainCtrl',
+		controller: 'MainCtrl',
 		templateUrl: 'templates/Resume.html'
 	}).when('/travel', {
-		controller: 'mainCtrl',
+		controller: 'MainCtrl',
 		templateUrl: 'templates/travel.html'
 	})
 });
 
 app.controller('mainCtrl', function($scope, $routeParams, $routeProvider, $location) {
+	console.log("in the main controller");
 });
