@@ -13,6 +13,6 @@ app.config(function($routeProvider) {
 	})
 });
 
-app.controller('mainCtrl', function($scope, $routeParams, $routeProvider, $location) {
+app.controller('MainCtrl', function($scope, $location) {
 	console.log("in the main controller");
 });

@@ -18,25 +18,32 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body ng-app="personalApp">
-	<div class="header">Pablo Cazzulino</div>
-	<div class="navbar">
-		<ul>
-			<li>
-				<a ng-href="">Contact Me</a>
-			</li>
-			<li>
-				<a ng-href="#/resume">My Resume</a>
-			</li>
-			<li>
-				<a ng-href="#/travel">Travels</a>
-			</li>
-		</ul>
+	<div class="row-fluid">
+		<div class="col-xs-12">
+			<div class="navbar">
+				<ul>
+					<div class="col-xs-4">
+						<li class="name">Pablo Cazzulino</li>
+					</div>
+					<li>
+						<a ng-href="#/">Contact Me</a>
+					</li>
+					<li>
+						<a ng-href="#/resume">My Resume</a>
+					</li>
+					<li>
+						<a ng-href="#/travel">Travels</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 
-	<div class="container" ng-view></div>
+
+	<div class="container-fluid" ng-view></div>
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
 	<script src="angular-route.js"></script>
-	
+	<script src="script.js"></script>
 </body>
 </html>
