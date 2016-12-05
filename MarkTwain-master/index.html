@@ -2,13 +2,14 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<title>Pablo's Personal Site</title>
+	<title>Illustrating Tom and Huck</title>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
 
-	<!-- Latest compiled and minified CSS -->
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+
+    <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
 	<!-- Optional theme -->
@@ -17,32 +18,29 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
-<body ng-app="personalApp">
-	<div class="row-fluid">
-		<div class="col-xs-12">
-			<div class="navbar">
-				<ul>
-					<div class="col-xs-4">
-						<li class="name">Pablo Cazzulino</li>
-					</div>
-					<li>
-						<a ng-href="#/">Contact Me</a>
-					</li>
-					<li>
-						<a ng-href="#/resume">My Resume</a>
-					</li>
-					<li>
-						<a ng-href="#/travel">Travels</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+<body ng-app="twainApp">
+	<div class="container-fluid">
+ 		<div class="row">
+	 		<div class="headbar">Illustrating Tom and Huck</div>
+	 		<div class="navbar"><a ng-href="#/tom">Tom</a></div>
+	 		<div class="navbar"><a ng-href="#/huck">Huck</a></div>
+ 		</div>
+	 </div>
+	 <div class="container-fluid" ng-view></div>
+	 <div class="footer">
+	 	<div class="row">
+ 			<div class="vanbar">Pablo Cazzulino</div>
+ 			<div class="vanbar">ENAM 4500 Final Project</div>
+ 			<div class="vanbar">
+ 				<a ng-href="#/references">Sources</a>
+ 			</div>
+ 			<div class="vanbar">
+ 				<a ng-href="#/">About this project</a>
+ 			</div>
+	 	</div>
+	 </div>
 
-
-	<div class="container-fluid" ng-view></div>
-	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
 	<script src="angular-route.js"></script>
 	<script src="script.js"></script>
 </body>
