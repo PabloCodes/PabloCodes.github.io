@@ -106,6 +106,8 @@
 .lightbox-content .blurb {
 	background: white;
 	color: black;
+	padding-left: 2px;
+	padding-right: 2px;
 }
 h1 {
 	text-align: center;
