@@ -62,8 +62,6 @@
 	display: inline;
 }
 .r-float:hover {
-	transform: translate(-1%,-1%);
-	transition: transform .4s;
 	box-shadow: 5px 5px 5px rgb(200,200,200);
 }
 .r-float img {
@@ -92,6 +90,7 @@
 	top:50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
+	-webkit-transform: -webkit-translate(-50%,-50%);
 	z-index: 5;
 	box-shadow: 8px 8px 5px #888888;
 	width: 70%;
@@ -102,6 +101,7 @@
 }
 .smaller {
 	transform: translate(-50%,-54%);
+	-webkit-transform: -webkit-translate(-50%,-54%);
 }
 .lightbox-content .blurb {
 	background: white;
@@ -112,12 +112,15 @@ h1 {
 }
 .t-up {
 	transform: translateY(-25%);
+	-webkit-transform: -webkit-translateY(-25%);
 }
 .t-up2 {
 	transform: translateY(-70%);
+	-webkit-transform: -webkit-translateY(-70%);
 }
 .t-up3 {
 	transform: translateY(-85%);
+	-webkit-transform: -webkit-translateY(-85%);
 }
 span {
 	text-decoration: underline;
@@ -125,6 +128,7 @@ span {
 .about {
 	width: 80%;
 	transform: translateX(12%);
+	-webkit-transform: -webkit-translateX(12%);
 }
 
 
